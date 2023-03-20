@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atlas - Ínicio</title>
+    <link rel="stylesheet" href="criarconta.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/script.js"></script>
+    <link rel="shortcut icon" href="Design sem nome.png" type="image/x-icon" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"
+        integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ=="
+        crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css"
+        integrity="sha384-aUGj/X2zp5rLCbBxumKTCw2Z50WgIr1vs/PFN4praOTvYXWlVyh2UtNUU0KAUhAX" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"
+        integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ=="
+        crossorigin="anonymous"></script>
+
+    <script src="https://github.com/makeusabrew/bootbox/releases/download/v4.4.0/bootbox.min.js"></script>
+
+
+    <style>
+        @import url('https://fonts.cdnfonts.com/css/Hammersmith One');
+    </style>
+</head>
+
+<body>
+
+
+
+
+
+    <div class="main-login">
+        <div class="left-login">
+            <h1 class="bv">Bem Vindo(a) ao Atlas
+            </h1>
+            <h2 class="Criar">Crie Sua Conta Grátis!</h2>
+            <img src="diving-animate.svg" alt="" class="left-login-image">
+        </div>
+        <div class="right-login">
+
+            <div class="card-login">
+                <img class="logo" src="atlas2.png" alt="Logo Atlas">
+
+
+                <div class="textfield">
+                    <label for="Usuario">Email</label>
+                    <input type="text" placeholder="Email" name="Email" id="email">
+                </div>
+                <div class="textfield">
+                    <label for="Senha">Senha</label>
+                    <input type="password" name="Senha" placeholder="Senha" id="password">
+                </div>
+                <button class="btn-login" onclick="teste();return false"> Criar Conta</button>
+
+                <div class="Login-recused">
+                    <a href="login.html"> Já Tem Uma Conta?</a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <footer class="rodape">
+        <br>
+        <hr>
+        <small>
+            <center> By Atlantis Corporation </center>
+
+        </small>
+    </footer>
+
+
+
+    <script>
+        function teste(){
+     var email = document.getElementById('email');
+     var password = document.getElementById(email);
+
+     email.addEventListener('focus',()=>{  
+        email.style.borderColor = "#4A5F6A";
+     
+     });
+
+     password.addEventListener('focus',()=>{  
+        password.style.borderColor = "#4A5F6A";
+     
+     });
+
+     if (email == "email" && senha == "senha" ){
+         alert('sucesso')
+         location.href = "login.html"
+     } else {
+       alert("Algo de Errado não está certo!")
+     }}
+
+    </script>
+
+
+
+
+
+    <script>
+        function typeWriter(elemento) {
+            const textoArray = elemento.innerHTML.split('');
+            elemento.innerHTML = '';
+            textoArray.forEach((letra, i) => {
+                setTimeout(() => elemento.innerHTML += letra, 75 * i);
+            });
+        }
+
+        const titulo = document.querySelector('h1');
+        typeWriter(titulo);
+
+    </script>
+</body>
+
+</html>

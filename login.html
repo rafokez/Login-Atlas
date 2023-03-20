@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Atlas</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="shortcut icon" href="Design sem nome.png" type="image/x-icon" />
+
+</head>
+
+<body>
+    <img class="logo" src="programador.svg" alt="programador">
+
+    <div class="box">
+
+        <div class="form">
+
+            <h2> Juntar-se Ao Atlas</h2>
+            <div class="inputBox">
+                <input type="text" name="sUsuário" required="required" id="login">
+                <span> Usuário </span>
+                <i></i>
+            </div>
+
+            <div class="inputBox">
+
+                <input type="password" name="Senha" required="required" id="senha">
+                <span> Senha </span>
+                <i></i>
+            </div>
+
+            <div class="links">
+                <a href="#"> Esqueci Minha Senha </a>
+                <a href="index.html"> Criar Minha Conta</a>
+
+            </div>
+            <button class="btn-login" onclick="Logar();return false"> Entrar</button>
+
+        </div>
+
+    </div>
+
+    </div>
+
+    <script>
+
+
+        function Logar() {
+            var login = document.getElementById('login').value;
+            var senha = document.getElementById('senha').value;
+            if (login == "freefire123" && senha == "reidaawm") {
+                alert('Sucesso')
+                location.href = "https://hoodshoop.com.br/";
+            } else {
+                alert('Usuário ou Senha incorretos')
+            }
+        }
+    </script>
+
+</body>
+
+</html>
